@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 25px;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+}
+
+ul {
+    display: block;
+    color: black;
+    min-height: 50px;
+}
+
+li {
+    display: list-item;
+    color: black;
+}

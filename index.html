@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>Doneen's DOM</title>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <div>
+        <div>
+            <h5>
+                <input type="date" id="todayDate" placeholder="Today's Date" />Today's
+                Date
+            </h5>
+            <input type="text" id="todoInput" placeholder="Enter A Task" />
+            <h5>
+                <select input type="text" class="form-select mb-3" id="selectCategory" placeholder="Category">
+                    <option value="Category">Select Category</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="School">School</option>
+                    <option value="Family">Family</option>
+                </select>
+                <h5>
+                    <input type="date" id="deadline" placeholder="Deadline" /> Task
+                    Deadline
+                </h5>
+                <select input type="text" class="form-select mb-3" id="taskStatus" placeholder="Task Status">
+                    <option value="">Select Task Status</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Not Started">Not Started</option>
+                    <option value="Completed">Completed</option>
+                </select>
+                <button id="addButton">+ Add Task To List +</button>
+        </div>
+        <div>
+            <label>Filter by Status:</label>
+            <select id="filterStatus">
+                <option value="All">All Tasks</option>
+                <option value="Not Started">Not Started</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <label>Filter by Category:</label>
+            <select id="filterCategory">
+                <option value="All">All Categories</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="School">School</option>
+                <option value="Family">Family</option>
+            </select>
+
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
