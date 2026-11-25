@@ -21,15 +21,25 @@ button.addEventListener("click", addItem);
 function addItem() {
     console.log("Button clicked!");
 
+    // Today's Date
+    const dateElement = document.getElementById("todayDate");
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+        dateElement.textContent = today.toDateString();
+
+
     // Create task object
     const task = {
-        today: todayDate.value,
-        taskName: input.value,
-        category: category.value,
-        deadline: deadline.value,
-        status: taskStatus.value,
-    };
+    today: today.toDateString(), // or use 'today' if you want the full Date object
+    taskName: input.value,
+    category: category.value,
+    deadline: deadline.value,
+    status: taskStatus.value
+};
+    console.log(today);
+    console.log(task);
 
+   
     // Add task to array
     taskList.push(task);
 
